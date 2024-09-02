@@ -5144,10 +5144,10 @@ select {
 }
 
 .install-guid-btn {
-    width: 317px;
-    height: 80px;
+    width: 265px;
+    height: 65px;
     line-height: 80px;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 700;
     color: #fff;
     text-align: center;
@@ -5155,7 +5155,13 @@ select {
     background-size: cover;
     border: 0;
     background-color: transparent;
-    margin-top: 40px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.install-guid-btn span {
+    position: relative;
+    top: -6px;
 }
 
 .desktop-block {
@@ -5209,5 +5215,16 @@ select {
 
     .install-guid-btn.mobile-block {
         margin: 0px auto;
+    }
+
+    .bannerVideo {
+        background: url('../img/banner_bg.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .banner-content {
+        position: static;
+        padding: 30px 0;
     }
 }
