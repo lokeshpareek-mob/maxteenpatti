@@ -5206,4 +5206,8 @@ select {
     .install-guide1-img .w-50 {
         width: 100%;
     }
+
+    .install-guid-btn.mobile-block {
+        margin: 0px auto;
+    }
 }
