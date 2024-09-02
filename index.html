@@ -51,8 +51,7 @@
 
         .banner-content {
             position: absolute;
-            top: 0;
-            bottom: 0;
+            bottom: 18px;
             left: 0;
             display: flex;
             align-items: center;
@@ -1766,7 +1765,7 @@ Header Styles
                                 }
                             }
                         </style>
-                        <nav
+                        <nav id="mainNamvMenu"
                             class="tatsu-header-module tatsu-header-navigation clearfix  tatsu-hide-mobile tatsu-hide-tablet">
                             <div class="tatsu-menu tatsu-fymr7igemyy8cvi">
                                 <ul id="normal-menu-fymr7igemyy8cvi" class="clearfix sf-js-enabled sf-arrows">
@@ -2028,7 +2027,7 @@ Header Styles
                                     margin: 0px 30px 0px 0px;
                                 }
                             </style>
-                            <div class="line-wrapper">
+                            <div class="line-wrapper mobile-minu-btn">
                                 <span class="line-1"></span>
                                 <span class="line-2"></span>
                                 <span class="line-3"></span>
@@ -2126,8 +2125,8 @@ Header Styles
                 <!-- <video autoplay muted loop>
                     <source src="assets/video/gaming-bgFliped.mp4" type="">
                 </video> -->
-                <img src="assets/img/banner.jpg" class="w-100 desktop-block" />
-                <img src="assets/img/banner-mb.jpg" class="w-100 mobile-block" />
+                <img src="assets/img/banner.png" class="w-100 desktop-block" />
+                <img src="assets/img/banner-mb.png" class="w-100 mobile-block" />
                 <div class="banner-content">
                     <div class="banner-container">
                         <div class="w-50">
@@ -2434,10 +2433,10 @@ SignIn Maxteenpatti <i class="unicon-arrow-right"></i>
 
         <divg class="w-100 download-block" id="downloadId">
             <div class="d-flex download-link">
-                <a href="#">
+                <a href="https://tinyurl.com/44euk48v">
                     <img src="assets/img/download1.png" />
                 </a>
-                <a href="#">
+                <a href="https://www.amazon.com/gp/product/B0DFH9748R" target="_blank">
                     <img src="assets/img/download2.png" />
                 </a>
             </div>
@@ -6060,6 +6059,14 @@ SignIn Maxteenpatti <i class="unicon-arrow-right"></i>
 
 
     <!-- Option Panel Custom JavaScript -->
+
+    <script>
+        const mobileMenuBtn = document.querySelector('.mobile-minu-btn');
+        const mainNamvMenu = document.getElementById('mainNamvMenu');
+        mobileMenuBtn.addEventListener('click', function () {
+            mainNamvMenu.classList.toggle('mainNamvMenu-open')
+        })
+    </script>
 
 </body>
 
