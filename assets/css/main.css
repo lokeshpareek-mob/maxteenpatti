@@ -5144,10 +5144,10 @@ select {
 }
 
 .install-guid-btn {
-    width: 265px;
-    height: 65px;
+    width: 220px;
+    height: 55px;
     line-height: 80px;
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 700;
     color: #fff;
     text-align: center;
@@ -5161,8 +5161,9 @@ select {
 
 .install-guid-btn span {
     position: relative;
-    top: -6px;
+    top: -14px;
 }
+
 
 .desktop-block {
     display: none;
@@ -5204,6 +5205,11 @@ select {
     .mobile-block {
         display: none;
     }
+
+    .banner-container {
+        position: relative;
+        left: 11%;
+    }
 }
 
 @media (max-width: 767px) {
@@ -5218,7 +5224,8 @@ select {
     }
 
     .bannerVideo {
-        background: url('../img/banner_bg.jpg') no-repeat;
+        /* background: url('../img/banner_bg.jpg') no-repeat; */
+        background: #000;
         background-size: cover;
         background-position: center;
     }
@@ -5227,4 +5234,27 @@ select {
         position: static;
         padding: 30px 0;
     }
+
+    .tatsu-header-col .tatsu-header-navigation {
+        position: absolute;
+        top: 100%;
+        background: #000;
+        width: 100%;
+        left: 0;
+    }
+
+    .tatsu-header-col .tatsu-header-navigation ul li {
+        display: block;
+        width: 100%;
+    }
+
+    .tatsu-header-col .tatsu-header-navigation ul li a {
+        display: block;
+    }
+
+    .tatsu-header-col .tatsu-header-navigation.mainNamvMenu-open {
+        display: block !important;
+    }
+
+
 }
